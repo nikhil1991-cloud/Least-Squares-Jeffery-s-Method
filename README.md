@@ -1,4 +1,4 @@
-# Least-Squares-Jeffery-s-Method
+# Least-Squares-Jefferys-Method
 This code uses Jeffery's Method to perform least squares on a data set which contains uncertainties in both dependent (Y) and independent (X) variables. 
 Furthermore, this method also takes into account the covariance that the independent-dependent variables have amongnst each other. The way Jeffery does 
 this is that he combines both dependent and independent variable into one single variable called X (called input variable) and computes the Chi-square. 
