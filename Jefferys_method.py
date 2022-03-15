@@ -17,8 +17,12 @@ def generate_alphas(A,y,Initial_a,Sigma_matrix,epochs):
     
         z: Array of shape (1,n) which are the coefficients for n independent variables.
     """
+    X_d = np.c_[y,A]#initialize model parameters
+    x_d = X_d.flatten()#flatten model parameters
+    a_g = Initial_a#guess values of coefficients from nnls
+    DfDx = np.zeros((X_d.shape[0],X_d.shape[0]*X_d.shape[1]))#initialize df/dx array
     e=0
-    for e in range (0,epoch):
+    for e in range (0,epochs):
         X_g = np.c_[np.dot(A,a_g),A] #calculate guessed model parameters
         x_g = X_g.flatten() #flatten guessed model parameters
         delta_x_g = x_d - x_g #calculate delta_xg
