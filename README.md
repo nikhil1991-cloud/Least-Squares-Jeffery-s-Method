@@ -9,4 +9,4 @@ A very good explanation can be found in section 14.6 of the Berkley lecture note
 I have used the same notations in the code as those used section 14.6. I am following the iterations mentioned in section 14.9 to derive the coefficients by updating the coefficients and the input variables at each step.
 
 The original paper can be found here: http://adsabs.harvard.edu/full/1980AJ.....85..177J. I will be using this method to derive Star Formation Histories of
-nearby Galaxies (z<0.15) by comparing their Spectral Energy Distribution (SED) with the Spectra from models. Please keep an eye out for the upcoming repository!
+nearby Galaxies (redshift z<0.15) by comparing their Spectral Energy Distribution (SED) with the Spectra from models. In this case, X and Y will both be a function of the differences between the observed and model spectral parameters. We will solve for the slope "alpha" that controls the models.
